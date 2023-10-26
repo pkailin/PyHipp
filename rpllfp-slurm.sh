@@ -6,11 +6,19 @@
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=1   # number of CPUs for this task
+<<<<<<< HEAD
 #SBATCH -J "rsllfp"   # job name
 
 ## /SBATCH -p general # partition (queue)
 #SBATCH -o rsllfp-slurm.%N.%j.out # STDOUT
 #SBATCH -e rsllfp-slurm.%N.%j.err # STDERR
+=======
+#SBATCH -J "rpllfp"   # job name
+
+## /SBATCH -p general # partition (queue)
+#SBATCH -o rpllfp-slurm.%N.%j.out # STDOUT
+#SBATCH -e rpllfp-slurm.%N.%j.err # STDERR
+>>>>>>> origin/main
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
