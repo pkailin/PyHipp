@@ -23,8 +23,4 @@ DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(65,97)]
 print(time.localtime()); \
 print(time.time()-t0);"
 
-<<<<<<< HEAD
 aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:675577402938:awsnotify --message "RS3AJobDone"
-=======
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:675577402938:awsnotify --message "RS3aJobDone"
->>>>>>> origin/main
